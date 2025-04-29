@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick-Archer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Quick-Archer</h1>
+    <p id="vol-info">Volée 0/3</p>
+  </header>
+
+  <main>
+    <section id="vol-selector">
+      <label><input type="radio" name="vol-size" value="3" checked /> 3 Arrows</label>
+      <label><input type="radio" name="vol-size" value="6" /> 6 Arrows</label>
+    </section>
+
+    <section id="score-pad"></section>
+
+    <section id="actions">
+      <button id="undo-last" class="btn secondary">Undo</button>
+      <button id="clear-session" class="btn danger">Clear</button>
+    </section>
+
+    <section id="score-display" class="score-display"></section>
+
+    <section id="summary-block">
+      <p><strong>Parziale:</strong> <span id="partial-score">0</span></p>
+      <p><strong>10+X:</strong> <span id="count-10x">0</span></p>
+      <p><strong>X:</strong> <span id="count-x">0</span></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
